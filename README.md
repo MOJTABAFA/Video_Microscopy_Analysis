@@ -1,23 +1,38 @@
+## Analysis of Viral Propagation and Cardiomyocyte Activity
 
-## Problem-1 Measure the propogation of the virus over time between neighboring cells.
-The stack `problem1_viralpropagation.tif` is a two-channel (phase and viral expression) time-lapse of the infection process. The second channel reports the amount of virus expressed in each cell. This specific virus causes the cells to form syncitia, i.e., it causes cells with single nuclei to fuse into multi-nucleated cells.  The data was acquired with 20x objective with an approximate pixel size of 300nm and the time interval of 15 min between frames.
+This project explores two significant areas of cellular analysis using time-lapse imaging: assessing the propagation of a virus among neighboring cells and evaluating the contractile behavior of cardiomyocytes.
 
-From this movie, measure the following:
+---
 
-a. Rate at which the expression of virus grows once a cell is infected.
+### Problem 1: Measuring Viral Propagation Over Time
 
-b. The duration of the infection cycle in this field of view. For example, how long does it take a newly infected cell to express virus titers similar to the previously infected cells?
+**Dataset Overview**  
+The dataset for this analysis is provided in the stack `problem1_viralpropagation.tif`, which consists of a two-channel time-lapse capturing:
+- **Phase contrast** (Channel 1)
+- **Viral expression** (Channel 2)
 
-c. (bonus) Difference in speed at which nuclei of the uinfected and infected cells move.
+This dataset records the infection progression over time, where the second channel indicates viral expression levels within individual cells. The virus studied induces syncytium formation, causing single-nucleus cells to merge into multi-nucleated cells. The data was acquired using a 20x objective lens, with an approximate pixel size of 300 nm and a time interval of 15 minutes between frames.
 
-## Problem-2 Measure the local contractile activity of beating cardiomyocytes.
-The stack `problem2_beatingcardiomyocytes.tif` is a label-free time-lapse of intrinsic anisotropy (birefringence) of cardiomyocytes. The anisotropic myofibrils within cardiomyocytes are visible against isotropic background.  The movie was acquired at 100fps and the pixel size is approrximately 100nm. 
+**Analysis Objectives**
+- **Rate of Viral Expression Growth**: Quantify the rate at which viral expression increases in a cell after infection.
+- **Infection Cycle Duration**: Measure the time it takes for a newly infected cell to reach viral titer levels comparable to previously infected cells within the field of view.
+- **(Bonus)** Comparison of Nuclear Movement: Analyze and compare the movement speed of nuclei between infected and uninfected cells.
 
-From this movie, measure the following:
+---
 
-a. Map of the direction of movement of myofibrils and other cell components.
+### Problem 2: Measuring Contractile Activity of Cardiomyocytes
 
-b. Map of the magnitude of movement of myofibrils and other cell components.
+**Dataset Overview**  
+The dataset `problem2_beatingcardiomyocytes.tif` is a label-free time-lapse recording showing the intrinsic anisotropy (birefringence) of cardiomyocytes, highlighting:
+- The anisotropic myofibrils visible within cardiomyocytes against an isotropic background.
 
-c. (bonus) Alignment between the orientation of myofibril and the local direction of beat, ignoring other cellular structures.
+This data was captured at a high frame rate of 100 fps, with an approximate pixel size of 100 nm, providing detailed visual insights into cardiomyocyte contractility.
 
+**Analysis Objectives**
+- **Directional Movement Mapping**: Generate a map that visualizes the direction of movement of myofibrils and other cellular components.
+- **Magnitude of Movement Mapping**: Create a map that indicates the magnitude of movement for myofibrils and other cellular structures.
+- **(Bonus)** Myofibril Orientation and Beat Alignment: Assess the alignment between the orientation of myofibrils and the local direction of contraction, disregarding other cellular structures.
+
+---
+
+These analyses offer valuable insights into the dynamics of viral infection and the contractile behavior of cardiomyocytes, enhancing our understanding of cellular functions through advanced image analysis techniques.
